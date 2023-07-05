@@ -1,106 +1,3 @@
-// import { Button } from "@material-ui/core";
-// import React, { Component } from "react";
-// import CakeIcon from "@material-ui/icons/Cake";
-// import "./Navbar.css";
-// import { Link } from "react-router-dom";
-// const MenuItems = [
-//   {
-//     title: "Home",
-//     url: "/",
-//     cName: "nav-links",
-//     color: "red",
-//   },
-//   {
-//     title: "Products",
-//     url: "Products",
-//     cName: "nav-links",
-//     color: "blue",
-//   },
-//   {
-//     title: "About Us",
-//     url: "AboutUs",
-//     cName: "nav-links",
-//     color: "yellow",
-//   },
-// ];
-
-// export default class Navbar extends Component {
-//   render() {
-//     return (
-//       <>
-//         <div
-//           style={{
-//             display: "flex",
-//             justifyContent: "space-between",
-//             alignItems: "center",
-//             height: "100px",
-//             position: "sticky",
-//             background:
-//               "linear-gradient(-45deg,rgb(139,69,19),rgb(210,105,30))",
-//           }}
-//         >
-//           <div>
-//             <h1
-//               style={{
-//                 fontSize: "40px",
-//                 fontFamily: "cursive",
-//                 display: "flex",
-//               }}
-//               className="logo"
-//             >
-//               <div
-//                 style={{
-//                   marginLeft: "15px",
-//                 }}
-//               >
-//                 Creamy
-//               </div>
-
-//               <div className="logo-icon">
-//                 <CakeIcon
-//                   style={{
-//                     fontSize: "50px",
-//                     marginTop: "4px",
-//                     marginLeft: "5px",
-//                     color: "rgb(0,0,0)",
-//                   }}
-//                 />
-//               </div>
-//             </h1>
-//           </div>
-
-//           <div style={{ display: "flex" }}>
-//             {MenuItems.map((x) => (
-//               <div
-//                 style={{
-//                   margin: "0px 10px 0px 10px",
-//                 }}
-//               >
-//                 <Link to={x.url} style={{ textDecoration: "none" }}>
-//                   <p className={x.cName}>{x.title}</p>
-//                 </Link>
-//               </div>
-//             ))}
-
-//             <div>
-//               <Button
-//                 variant="outlined"
-//                 style={{
-//                   margin: "20px 40px 0px 10px",
-//                   backgroundColor: "black",
-//                   color: "white",
-//                 }}
-//               >
-//                 Sign Up
-//               </Button>
-//             </div>
-//           </div>
-//         </div>
-//       </>
-//     );
-//   }
-// }
-
 import React, { Component } from "react";
 import CakeIcon from "@material-ui/icons/Cake";
 import { Link } from "react-router-dom";
@@ -128,24 +25,9 @@ const MenuItems = [
   },
 ];
 
-// const buttonStyle = createTheme({
-//   overrides: {
-//     MuiButton: {
-//       root: {
-//         borderRadius: "20px",
-//       },
-//       outlined: {
-//         color: "white",
-//         background: "orange",
-//       },
-//     },
-//   },
-// });
-
 export default class Navbar extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       openLogin: false,
     };
