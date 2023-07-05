@@ -4,7 +4,6 @@ import {
   DialogTitle,
   DialogContent,
   TextField,
-  Button,
   createTheme,
   ThemeProvider,
 } from "@material-ui/core";
@@ -16,8 +15,6 @@ const fieldStyle = createTheme({
       root: {
         margin: "10px",
         width: "300px",
-        // lineHeight: "5px",
-        // height: "20px",
       },
     },
   },
@@ -35,7 +32,6 @@ export default class LoginForm extends Component {
       errorName: false,
       errorEmail: false,
       errorPassword: false,
-      // data : [],
     };
   }
   nameChange = (val) => {
@@ -62,32 +58,34 @@ export default class LoginForm extends Component {
       this.setState({
         errorName: true,
       });
+      isValid = false;
+    } else {
+      isValid = true;
     }
     if (this.state.email == "") {
       this.setState({
         errorEmail: true,
       });
+      isValid = false;
+    } else {
+      isValid = true;
     }
     if (this.state.password == "") {
       this.setState({
         errorPassword: true,
       });
+      isValid = false;
+    } else {
+      isValid = true;
     }
     return isValid;
   };
   buttonClick = () => {
     let isValid = this.formValidatiion();
     if (isValid == true) {
-      fetch("url")
-        .thhen((response) => response.json())
-        .then((data) => {
-          this.setState({
-            data: data,
-          });
-        })
-        .catch((error) => error);
+      alert("logged in successful");
     } else {
-      error;
+      alert("please enter details properly");
     }
   };
 
