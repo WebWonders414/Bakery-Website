@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import video from "../Media/vido1.mp4";
 import vid from "../Media1/vid01.mp4";
 import { Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
@@ -11,9 +10,7 @@ export default class Home extends Component {
           style={{
             display: "flex",
             flexDirection: "column",
-            //justifyContent: "center",
             alignItems: "center",
-            // objectFit: "contain",
             height: "100vh",
             width: "100%",
           }}
