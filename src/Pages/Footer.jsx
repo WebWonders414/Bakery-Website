@@ -50,7 +50,6 @@ export default class Footer extends Component {
               paddingTop: "70px",
               justifyContent: "space-between",
               width: "90%",
-              // padding: "70px 50px 0px 50px",
             }}
           >
             <di
@@ -58,11 +57,9 @@ export default class Footer extends Component {
                 display: "flex",
                 flexDirection: "column",
                 padding: "0px 40px",
-                // margin: "0px 50px",
               }}
             >
               <h2>About Us</h2>
-              {/* <Link>How it works</Link> */}
               <Link
                 style={{
                   textDecoration: "none",
@@ -157,7 +154,6 @@ export default class Footer extends Component {
                 display: "flex",
                 flexDirection: "column",
                 padding: "0px 80px",
-                // paddingBottom: "30px",
               }}
             >
               <h2>Social Media</h2>
